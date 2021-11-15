@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <script>
+        const redirects = {
+            "qrme": "https://apps.apple.com/us/app/qr-me-contact/id1412627381#?platform=iphone",
+        }
+
+        const path = window.location.pathname.replace('/', '');
+        
+        if (path in redirects){
+            window.location.replace(redirects[path])
+        }
+    </script>
+</html>
