@@ -8,7 +8,7 @@
             "meet": "https://calendly.com/chaseca/meet",
         }
 
-        const path = window.location.hash.replace('#', '');
+        const path = window.location.search.replace('?/', '');
         
         if (path in redirects){
             window.location.replace(redirects[path])
